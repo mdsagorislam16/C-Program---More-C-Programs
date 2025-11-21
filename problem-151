@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    // 1. Syntax Error
+    // printf("Hello World") // missing semicolon
+
+    // 2. Logical Error
+    int a=5,b=10;
+    int sum = a-b; // should be a+b
+    printf("Sum: %d\n", sum);
+
+    // 3. Runtime Error
+    int x=0;
+    if(x==0)
+        printf("Runtime error avoided: Division by zero\n");
+
+    return 0;
+}
+
+/*
+Output:
+Sum: -5
+Runtime error avoided: Division by zero
+*/
