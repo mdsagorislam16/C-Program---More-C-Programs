@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    FILE *fp = fopen(__FILE__, "r");
+    if(!fp) return 1;
+
+    char c;
+    while((c=fgetc(fp))!=EOF) {
+        putchar(c);
+    }
+
+    fclose(fp);
+    return 0;
+}
+
+/*
+Output:
+The program prints its own source code on the console.
+*/
