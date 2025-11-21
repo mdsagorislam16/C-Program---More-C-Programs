@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    printf("Hello\n");
+    return 0;
+    printf("This is unreachable code\n"); // unreachable
+
+    return 0;
+}
+
+/*
+Output:
+Hello
+*/
